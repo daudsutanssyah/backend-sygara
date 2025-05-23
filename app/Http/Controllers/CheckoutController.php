@@ -36,7 +36,7 @@ class CheckoutController extends Controller
         ->where('keranjangs.checkout_id',$id)
         ->get();
         
-        // return view yg akan menampilkan detail pemesanan
+        // return view yg akan menampilkan detail g
         return view('checkout.detail', compact('data','products') );
     }
 

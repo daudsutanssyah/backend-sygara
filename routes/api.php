@@ -44,6 +44,7 @@ Route::post('/checkout-post', [App\Http\Controllers\Api\ApiCheckoutController::c
 Route::post('/checkout-post-by-id', [App\Http\Controllers\Api\ApiCheckoutController::class, 'postCheckoutById']);
 Route::post('/upload-bukti-bayar', [App\Http\Controllers\Api\ApiCheckoutController::class, 'uploadBuktiBayar']);
 Route::get('/checkout-list-all', [App\Http\Controllers\Api\ApiCheckoutController::class, 'getCheckoutAll']);
+
 Route::get('/checkout-list-baru', [App\Http\Controllers\Api\ApiCheckoutController::class, 'getCheckoutBaru']);
 Route::get('/checkout-list-proses', [App\Http\Controllers\Api\ApiCheckoutController::class, 'getCheckoutProses']);
 Route::get('/checkout-list-selesai', [App\Http\Controllers\Api\ApiCheckoutController::class, 'getCheckoutSelesai']);
